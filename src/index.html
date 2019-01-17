@@ -6,10 +6,19 @@
   <title>Stencil Component Starter</title>
   <script src="/build/mycomponent.js"></script>
 
+  <style rel="stylesheet">
+    .slot-elem {
+      background: green;
+    }
+  </style>
 </head>
 <body>
 
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <my-component first="Stencil" last="'Don't call me a framework' JS">
+    <p slot='list-elem' class="slot-elem"> Apple </p>
+    <p slot='list-elem' class="slot-elem"> Blueberry </p>
+    <p slot='list-elem' class="slot-elem"> Cranberry </p>
+  </my-component>
 
 </body>
 </html>

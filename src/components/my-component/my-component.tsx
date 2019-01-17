@@ -27,6 +27,8 @@ export class MyComponent {
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return <div>Hello, World! I'm {this.getText()}
+      <slot name="list-elem"></slot>
+    </div>;
   }
 }
