@@ -1,3 +1,7 @@
 div {
   background: var(--my-background, yellow);
 }
+
+::slotted(.slot-elem) {
+  background: blue !important;
+}
